@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="image icon" type="image/png" href="e.png">
+	<a href="index.html"></a>
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+
+*{
+	margin: 0;
+	padding:0;
+	font-family: Century Gothic;
+	scroll-behavior: smooth;
+	transition: 0.6s ease;
+
+}
+header{
+	background-color: black;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/ands.jpg);
+	
+	/*linear gradient helps in creating imgs of different color gradient where rgba stands for red green blue and alpha which ranges from 0.0(fully transparent) to 1.0(fully opaque) */
+  	
+  	height: 300vh;
+  	background-size: cover;
+  	background-position: center;
+
+}
+ul{
+	float: right; 
+
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 15px;
+	border: 1px solid white transparent;
+	transition: 0.7s;
+}
+ul li a:hover{
+	background-color: grey;
+	
+}
+
+ul li.active a{
+	background-color: white;
+	color:black;
+
+}
+
+.logo img{
+	padding: 5px 6px;
+	float:left;
+	width: 60px;
+	height: auto;
+}
+
+.logo2 img{
+	padding: 18px 0px;
+	float:left;
+	width: 110px;
+	height: auto;
+}
+
+.title{
+	position: absolute;
+	top:48%;
+	left:50%;
+	transform: translate(-50%,-52%);
+}
+
+.Social {
+position: fixed;
+margin-top:30%;
+margin-left:95%;
+transform:translate(-50%,-50%);
+}
+
+
+ul li i {
+	list-style: none;
+	margin:20px;
+	display:inline block;
+	font-size:40px;
+	padding:15px 2px;
+	color:white;
+	border:1px solid white;
+	border-radius: 300px;
+	transition: 0.5s;
+	overflow-x: hidden;
+	align-self: center;
+}
+
+ul li i .fa{
+
+position: relative;
+color: grey;
+transition:0.5 s; 	
+
+}
+
+ul li i:hover {
+
+background-color: grey;
+transform: rotateY(360deg);
+}
+
+		.card{
+
+		color: white;
+    	font-family: Century Gothic;
+        background-color: rgba(255,255,255,0.1);
+        padding: 25px;
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  		
+       	
+
+    	}
+
+		.row{
+
+        color: white;
+    	padding: 40px;
+    	padding-top: 10%;
+    	margin-left: -1%;
+    	height: 50%;
+    	width: 20%;
+    	position: fixed;
+    
+    	
+    	
+    	}
+
+ 		.rightcolumn{
+
+ 		margin: -17.8%;
+       padding-top: 10%;
+        padding-left: 45%;
+        height: 20%;
+        margin-top: 0%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+        
+        
+		}	
+
+	 	.leftcolumn{
+
+ 		margin: -10%;
+ 		padding-top: 20%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+     
+		}
+
+	 	.maincolumn{
+
+ 		margin: -10%;
+ 		padding-top: 13%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+        
+		}
+
+		.centercolumn{
+
+ 		margin: -10%;
+ 		padding-top: 13%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+       
+		}
+	
+		.upcolumn{
+
+ 		margin: -10%;
+ 		padding-top: 13%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+     
+		}
+
+    	.downcolumn{
+
+ 		margin: -10%;
+ 		padding-top: 13%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+        
+
+		}
+
+		.acolumn{
+
+ 		margin: -10%;
+ 		padding-top: 13%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+        
+
+		}
+
+		.bcolumn{
+
+ 		margin: -10%;
+ 		padding-top: 13%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+        
+		}
+
+		.dcolumn{
+
+ 		margin: -10%;
+ 		padding-top: 13%;
+       
+        padding-left: 37.4%;
+        height: 20%;
+        width: 600px;
+        text-align: left;
+        letter-spacing: 1px;
+       
+		}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+	<header>
+		<div class="main">
+			<div class="logo">
+			<img src="../images/logs.png">
+			<div class="logo2">
+			<img src="../images/anmol.png">
+
+
+		</div>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="Resume.html">RESUME</a></li>
+			<li Class="active"><a href="#">BlOG</a></li>
+			<li><a href="Research.html">RESEARCH</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+
+
+		<div class="Social"> 
+		<ul>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" style="padding-left: 30px;"><a href="https://www.facebook.com/profile.php?id=100005256306340" target="_blank"></a></i></li>
+
+			<li><i class="fa fa-instagram" aria-hidden="true" style="padding-left: 30px;"><a href="https://www.instagram.com/anmolbasnyet/" target="_blank" ></a></i></li>
+
+			<li><i class="fa fa-twitter" aria-hidden="true" style="padding-left: 30px;"><a href="https://twitter.com/anmolbasnet18" target="_blank"></a></i></li>
+
+			<li><i class="fa fa-pinterest-p" aria-hidden="true" style="padding-left: 30px;"><a href="https://www.pinterest.com/basnetanmol13/" target="_blank"></a></i></li>
+		</ul>
+
+		</div>
+		 <div class="row">
+                
+                <p align="justify">
+                    <p><b style="font-size: 20px;">CONTENT</b></p><br><b style="font-size: 18px;"><a href="#technology" b style="color: white; text-decoration: none;">TECHNOLOGY</a></b><br><br>
+						<a href="#POSITIVE" b style="color: white; text-decoration: none;">Postive Impact on Human Life</a></b> <br><br><a href="#Efficiency" b style="color: white; text-decoration: none;">Efficiency And Productivity</a><br><br><a href="#Easy" b style="color: white; text-decoration: none;">Easy acess To Informaation</a><br><br><a href="#Social" b style="color: white; text-decoration: none;" >Social Networking</a><br><br><a href="#Innovation" b style="color: white; text-decoration: none;" >Innovation and Creativity</a><br><br>
+                    <b style="font-size: 20px"><a href="#Negative"b style="color: white; text-decoration: none;" > Negative Impact on Human Life</a></b><br><br><a href="#Competency"b style="color: white; text-decoration: none;"> Competency</a><br><br><a href="#Security"b style="color: white; text-decoration: none;">Security</a><br><br><a href="#Destruction"b style="color: white; text-decoration: none;">Destruction due to advanced Weapons</a><br><br>   <a href="#Health"b style="color: white; text-decoration: none;">Health Issues</a>
+                    
+                </p>
+                
+              
+
+        </div> 
+        
+        </div> 
+        <div class="rightcolumn">
+            <div class="card" style="width: 830px">
+                <h2><b style="font-size: 20px;"> TECHNOLOGY</b> </h2><br>Technology in general is the knowledge that creates new mechanisms that helps in making the day to day activities easier. Technology has become a basis of life which helps us function more efficiently and effectively. According to a very famous newspaper article in The Nation, technology was discovered in 4000 BCE in the form of iron and steel tools. Ever since it has evolved and developed rapidly throughout history.
+		
+                <a name="technology"></a>
+            </div>        
+		
+		</div>
+		<div class="leftcolumn">
+            <div class="card" style="width: 830px">
+            <a name="POSITIVE">
+            <a name="Efficiency">
+                <h2><b style="font-size: 20px; padding-top:40%;"> POSITIVE IMPACT ON HUMAN LIFE</b> </h2><br><b style="font-size: 18px">Efficiency and Productivity</b><br><br>It is very clear and known to all that technology plays a very vital role in lives of people these days due to its help in creating an easier and more effective way of life. Human beings have become very dependent on technology for an easier and better way of getting work done. Almost all the devices or tools that we use in our day to day life is technology and it has helped us save time and energy while getting a certain job done.
+
+            </div></a>        
+		
+		</div>
+		<div class="maincolumn">
+		<a name="Easy">
+            <div class="card" style="width: 830px">
+                <h2><b style="font-size: 18px; padding-top:40%;"> Easy acess To Information</b> </h2><br>Almost everyone these days rely on technology for reliable and easy access of information. Basically all the information can be accessed with the help of the tip of our fingers. Technology has made the world a smaller place where we can learn about anything anywhere. Internet is one of the most used and reliable form of technology which has made access to information a lot easier.
+            </div> 
+            </a>       
+		
+		</div>
+
+
+		<div class="centercolumn">
+		<a name="Social">
+		
+            <div class="card" style="width: 830px"><b style="font-size: 18px">SOCIAL NETWORKING</b><br><br>Technology has completely changed the way of communicating and one of the major means of communication today is through social networking sites. It has made communication easier and cheap. With the help of various social networking sites, people have become more aware about the on-going problems and are using those mediums to bring positive changes in the society. 
+
+            </div></a>     
+		
+		</div>
+
+		<div class="upcolumn">
+		<a name="Innovation">
+            <div class="card" style="width: 830px">
+                <h2><b style="font-size: 18px; padding-top:40%;"> INNOVATION AND CREATIVITY</b> </h2><br>Technology has made access to information way easier which has led to people gaining more knowledge about various fields and using that knowledge to come up with new and creative innovations. Due to the ongoing innovations, people are becoming more and more motivated to create better and more advanced technologies to make human life easier. 
+
+            </div></a>       
+		
+		</div>
+
+		<div class="downcolumn">
+		<a name="Negative">
+		<a name="Competency">
+            <div class="card" style="width: 830px">
+                <h2><b style="font-size: 20px; padding-top:40%;"> NEGATIVE IMPACT ON HUMAN LIFE</b></h2><br><b style="font-style: 18px">Competency</b><br><br>Increased dependency on modern tools like calculators and spell checkers has reduced our creativity and intelligence. Many today struggle with spelling even basic words without an editor to confirm every word. Others find it impossible to do basic math without a calculator. Though these tools assist to make us more efficient, we may become excessively reliant on them.
+
+
+            </div></a></a>      
+		
+		</div>
+
+		<div class="acolumn">
+		<a name="Security">
+            <div class="card" style="width: 830px">
+                <h2><b style="font-size: 20px; padding-top:40%;">Security</b> </h2><br>Everything has its fair share amount of pro’s and con’s. Similarly, even though technology has made our lives easier, it has also hampered human security and privacy. Be it via social networking sites or any other appliances, the human life is not as secure as it used to be. Due to new and more advanced technologies security has become way less and crimes have increased in a maximum level.
+
+            </div></a>
+		
+		</div>
+		<div class="bcolumn">
+		<a name="Destruction">
+            <div class="card" style="width: 830px">
+                <h2><b style="font-size: 20px; padding-top:40%;"> Destruction Due To Advanced Weapons</b> </h2><br>Modern technology is simply an advancement of old technology. The impact of technology in modern life is unmeasurable, we use technology in different ways and sometimes the way we implement various technologies do more damage than good. Due to these technologies alot advanced weapons has been created like nuclear bomb, hydrogen bomb which are capable of massive destruction in themselves.
+            </div></a>
+		
+		</div>
+		<div class="dcolumn">
+		<a name="Health">
+            <div class="card" style="width: 830px">
+                <h2><b style="font-size: 20px; padding-top:40%;">Health Issues</b> </h2><br> Technology has its positive as well as negative aspects. Even though, most of the innovations are created to make life easier, some advancements are harmful as well. Scientists has also proven that due to over usage of such technologies our body has been affected co-ordinately in daily basis. Some example of diseases caused by technologies are tumors due to continuos radiation coming out of such devices  and many more
+
+            </div></a> 
+		
+		</div>
+
+		
+		</div>
+		</div>
+		</header>
+
+
+
+
+
+
+</body>
+</html>

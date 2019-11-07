@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anmol Basnet</title>
+ 
+	<link rel="image icon" type="image/png" href="../images/e.png">
+	<a href="index.html">
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+	
+	*{
+	margin: 0;
+	padding:0;
+	font-family: Century Gothic;
+
+}
+
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+header{
+	background-color: black;
+	/*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(ad.jpg);*/
+	
+	/*linear gradient helps in creating imgs of different color gradient where rgba stands for red green blue and alpha which ranges from 0.0(fully transparent) to 1.0(fully opaque) */
+  	
+  	height: 100vh;
+  	background-size: cover;
+  	background-position: center;
+
+}
+ul{
+	float: right; 
+
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 15px;
+	border: 1px solid white transparent;
+	transition: 0.7s;
+}
+ul li a:hover{
+	background-color: grey;
+	
+}
+
+ul li.active a{
+	background-color: white;
+	color:black;
+
+}
+
+.logo img{
+	padding: 5px 6px;
+	float:left;
+	width: 60px;
+	height: auto;
+	z-index: 1;
+}
+
+.logo2 img{
+	padding: 18px 0px;
+	float:left;
+	width: 110px;
+	height: auto;
+	z-index: 1;
+}
+
+.title{
+	position: absolute;
+	top:48%;
+	left:50%;
+	transform: translate(-50%,-52%);
+	z-index: 1;
+
+
+}
+.title h1{
+	color:white;
+	font-size: 45px;
+	font-family: Lucida Fax;
+	z-index: 1;
+
+
+}
+.buttons{
+	position: absolute;
+	top:56%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+}
+.btns{
+	border:1px solid white;
+	padding:13px 35px;
+	color:white;
+	text-decoration: none;
+	margin: 5px;
+	transition:0.5s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	/* overflow basically are of three types hidden,scroll,auto out of which hidden helps to hide the objects that goes out of the boundries*/
+}
+
+.btns:hover{
+	background-color: grey;
+}
+
+.btns::before{
+	
+	content:""; /*without the "content" before couldn't be used*/
+	position:absolute;
+	left:0;
+	width:100%;
+	height:0%;
+	background: grey;
+	z-index: -1;
+	/* Z-index helps in overlapping the div over div or any thing with overlapping*/
+	transition: 0.6s;
+	/*transition helps in showing the effects included in inserted time*/
+}
+.btns::before{
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+.btns:hover::before{
+	height: 104%;
+}
+
+.Social {
+position: absolute;
+top: 90%;
+left:51%;
+transform:translate(-50%,-50%);
+margin: 0px auto;
+z-index: 1;
+}
+
+ul li i {
+	list-style: none;
+	margin:20px;
+	display:inline block;
+	font-size:40px;
+	padding:15px 2px;
+	color:white;
+	border:1px solid white;
+	border-radius: 300px;
+	transition: 0.5s;
+	overflow-x: hidden;
+
+}
+
+ul li i .fa{
+
+position: absolute;
+color: grey;
+transition:0.7s;
+
+
+}
+ul li i:hover {
+background-color: grey;
+transform: rotateY(360deg);
+
+}
+.Backvid{
+position: relative;
+width: 100%;
+height:80vh;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+opacity: 0.9;
+
+}
+
+
+.video-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+}
+.color-overlay{
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: black;
+	height: 100vh;
+	width: 100%;
+	opacity: 0.7;
+}
+	
+#video
+{
+	width: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+
+	<header>
+		<div class="main">
+			<div class="logo">
+			<img src ="../images/logs.png">
+			<div class="logo2">
+			<img src="../images/anmol.png">
+
+			
+		</div>
+		<ul>
+			<li Class="active"><a href="#">HOME</a></li>
+			<li><a href="Resume.html">RESUME</a></li>
+			<li><a href="blog.html">BlOG</a></li>
+			<li><a href="Research.html">RESEARCH</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+
+
+		</ul>
+		</div>
+		<div class="title">
+		<h1>Welcome to my site</h1>
+		</div>
+		<div class="buttons">
+			<a href="Resume.html" class="btns">MY WORKS</a>
+			<a href="Blog.html" class="btns">MY BLOGS</a>
+		</div>
+		<div class="Social"> 
+		<ul>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" style="padding-left: 30px;"><a href="https://www.facebook.com/profile.php?id=100005256306340" target="_blank"></a></i></li>
+
+			<li><i class="fa fa-instagram" aria-hidden="true" style="padding-left: 30px;"><a href="https://www.instagram.com/anmolbasnyet/" target="_blank" ></a></i></li>
+
+			<li><i class="fa fa-twitter" aria-hidden="true" style="padding-left: 30px;"><a href="https://twitter.com/anmolbasnet18" target="_blank"></a></i></li>
+
+			<li><i class="fa fa-pinterest-p" aria-hidden="true" style="padding-left: 30px;"><a href="https://www.pinterest.com/basnetanmol13/" target="_blank"></a></i></li>
+		</ul>
+
+		</div>
+		</div>
+		
+
+
+		<div class="Backvid">
+		<div class="video-container">
+		<div class="color-overlay ">
+		<video autoplay loop muted id="video">
+		<source src="../video/b.mp4" type="video/mp4">
+		</video>
+					
+		</div>
+
+		</div>
+		</div>
+
+			
+		</header>
+		
+
+
+</body>
+</html>
